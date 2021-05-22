@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Search popular tracks by genre{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <label for="genre">Genre</label>
+    <input name="genre" id="genre" required>
+    <input type="submit" value="Search">
+  </form>
+{% endblock %}
